@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+// ########HEADER##########
 .header {
     .container {
         max-width: 1586px;
@@ -154,6 +155,89 @@
     &__img {
         max-width: 100%;
         height: auto;
+    }
+}
+
+// #########BUILT###########
+.built {
+    .container {
+        max-width: 1586px;
+        height: 903px;
+        margin: 0 auto;
+    }
+    &__inner {
+        margin: 0 auto;
+        max-width: 1280px;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__top {
+        margin-top: 101px;
+        margin-bottom: 92px;
+        max-width: 791px;
+        display: flex;
+        justify-content: center;
+    }
+    &__h2 {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 57px;
+        color: #000;
+        text-align: center;
+        margin: 0;
+    }
+    &__bottom {
+        max-width: 1273px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    &__item {
+        width: 405px;
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 50px;
+        box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;    
+    }
+    &__item--1 {}
+    &__item--2 {
+        background: linear-gradient(230.95deg, #CB1AE8 -0.37%, #37BDA6 100%);
+        .built__item-svg {       
+        fill: #fff;
+        }          
+        .built__h3, .built__text, .built__link {            
+            color: #fff;
+        }
+    }
+    &__item--3 {}
+    &__item-svg {       
+        fill: #03D6F3;        
+        
+    }   
+    &__h3 {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 33px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    &__link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 27px;
+        color: #03D6F3;
+        text-decoration: none;
     }
 }
 
