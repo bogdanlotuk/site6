@@ -398,7 +398,7 @@
 }
 
 .solution .container {
-  max-width: 1586px;
+  max-width: 1583px;
   height: 757px;
   margin: 0 auto;
 }
@@ -487,5 +487,120 @@
 .solution__img {
   max-width: 100%;
   height: auto;
+}
+
+.simple .container {
+  max-width: 1583px;
+  height: 1422px;
+  margin: 0 auto;
+}
+
+.simple__inner {
+  margin: 0 auto;
+  max-width: 1071px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple__top {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.simple__h2 {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 57px;
+}
+
+.simple__text {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.simple__bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+
+.simple__item {
+  max-width: 335px;
+  height: 1067px;
+  padding: 40px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.simple__h3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.simple__description {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5C5C5C;
+}
+
+.simple__price {
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 65px;
+  color: #30D7BA;
+}
+
+.simple__dollar {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: #30D7BA;
+}
+
+.simple__bottom-text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.simple__bottom-text--small {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.simple__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  color: #03D6F3;
+  width: 251px;
+  height: 52px;
+  border: 1px solid #FFF;
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  border-radius: 39px;
+  transform: all;
+  margin-right: 7px;
+  transform: all;
+}
+
+.simple__btn:hover {
+  transition: 500ms;
+  color: #fff;
+  background-color: #03D6F3;
 }
 /*# sourceMappingURL=style.css.map */
