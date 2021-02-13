@@ -484,6 +484,7 @@
         max-width: 1583px;
         height: 1422px;
         margin: 0 auto;
+        border-bottom: 1px solid #F2F2F2;;
     }
     &__inner {
         margin: 0 auto;
@@ -492,8 +493,7 @@
         display: flex; 
         flex-flow: column;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;        
     }
     &__top {
         display: flex;
@@ -523,6 +523,8 @@
         flex-flow: column;
         align-items: center;
         justify-content: space-between;
+        border: 1px solid #DEDEDE;
+        border-radius: 10px;
     }
     &__item--1 {}
     &__item--2 {}
@@ -577,16 +579,80 @@
         box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
         border-radius: 39px;
         transform: all;
-        margin-right: 7px;
-        transform: all;
+        margin-right: 7px;        
     }
     &__btn:hover {
         transition: 500ms;
         color:#fff;
         background-color: #03D6F3;
     }
+}
+
+// #########SUBSCRIBE###########
+.subscribe {
+    .container {
+        max-width: 1583px;
+        height: 468px;
+        margin: 0 auto;
+    }
+    &__inner {
+        margin: 0 auto;
+        max-width: 474px;        
+        display: flex; 
+        flex-flow: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    &__h2 {
+        font-weight: 500;
+        font-size: 46px;
+        line-height: 57px;
+        text-transform: uppercase;
+        margin-top: 115px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    &__form {}
+    &__input {
+        width: 284px;
+        height: 52px;
+        background: #EFEFEF;
+        border: 1px solid #D0D0D0;
+        box-sizing: border-box;
+        border-radius: 6px;
+        margin-right: 5px;
+    }
+    &__submit {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;  
+        cursor: pointer;      
+        display: inline-block;
+        text-align: center;
+        padding: 15px;
+        background-color: #fff;
+        color: #03D6F3;
+        width: 177px;
+        height: 52px;
+        border: 1px solid #FFF;
+        box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+        border-radius: 39px;
+        transform: all;    
+    }
+    &__submit:hover {
+        transition: 500ms;
+        color:#fff;
+        background-color: #03D6F3;
+    }
 
 }
+
+
 
 
 
