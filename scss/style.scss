@@ -42,7 +42,6 @@ body {
         height: 78px;
         cursor: pointer;
     }
-    &__navigation {}
     &__menu {
         max-width: 440px;
         height: 52px;
@@ -100,10 +99,9 @@ body {
     }
     &__text {
         max-width: 650px;
-        height: 200px;        
+        min-height: 200px;        
         margin-bottom: 86px;
     }
-
     &__h1 {
         font-weight: 900;
         font-size: 55px;
@@ -133,7 +131,7 @@ body {
         text-align: center;
         padding: 15px;
         color:#fff;
-        width: 183px;
+        width: 180px;
         height: 52px;
         border: 1px solid #FFF;
         border-radius: 39px;
@@ -147,7 +145,7 @@ body {
         text-align: center;
         padding: 15px;
         color:#fff;
-        width: 172px;
+        width: 180px;
         height: 52px;
         border: 1px solid #FFF;
         border-radius: 39px;
@@ -180,11 +178,10 @@ body {
         flex-flow: column;
         justify-content: flex-start;
         align-items: center;
-        height: 903px;
     }
     &__top {
-        margin-top: 101px;
-        margin-bottom: 92px;
+        margin-top: 120px;
+        margin-bottom: 110px;
         max-width: 791px;
         display: flex;
         justify-content: center;
@@ -202,10 +199,11 @@ body {
         display: flex;
         justify-content: space-between;
         gap: 50px;
+        margin-bottom: 120px;
     }
     &__item {
-        width: 405px;
-        height: 440px;
+        max-width: 405px;
+        min-height: 440px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -224,13 +222,8 @@ body {
             color: #fff;
         }
     }
-
-    &__item--1 {}
-    &__item--2 {}
-    &__item--3 {}
     &__item-svg {       
-        fill: #03D6F3;        
-        
+        fill: #03D6F3;      
     }   
     &__h3 {
         font-weight: bold;
@@ -721,10 +714,62 @@ body {
             line-height: 50px;
         }    
     }
+    .built {
+        &__bottom {            
+            gap: 20px;
+            
+        }
+    }
+
 }
 
+@media (max-width: 768px) {
+    .header {
+        &__navigation {
+            display: none;
+        }
+        &__h1 {
+            font-size: 40px;
+            line-height: 46px;
+        } 
+    }
 
 
+}
+
+@media (max-width: 568px) {
+    .header {
+        &__btn {           
+            margin-right: 0;           
+        }
+        &__bottom {           
+            margin-top: 50px;        
+        }    
+        &__bottom-link {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &__get-started {            
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__h1 {
+            font-size: 40px;
+            font-weight: 400;
+        } 
+        &__text {       
+            margin-bottom: 40px;            
+        }
+        &__p {
+            font-weight: normal;
+        }
+    }
+    
+
+
+}
 
 
 
