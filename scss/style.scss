@@ -533,7 +533,7 @@ body {
     &__inner {
         margin: 0 auto;
         max-width: 1071px;
-        height: 1422px;
+        // height: 1422px;
         display: flex; 
         flex-flow: column;
         justify-content: center;
@@ -543,6 +543,8 @@ body {
         display: flex;
         flex-flow: column;
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 38px;
     }
     &__h2 {
         font-weight: 500;
@@ -558,6 +560,7 @@ body {
         justify-content: center;
         align-items: center;
         gap: 33px;
+        margin-bottom: 100px;
     }
     &__item {
         max-width: 335px;
@@ -636,7 +639,7 @@ body {
 .subscribe {   
     &__inner {
         margin: 0 auto;
-        height: 468px;
+        // height: 468px;
         max-width: 474px;        
         display: flex; 
         flex-flow: column;
@@ -648,7 +651,7 @@ body {
         font-size: 46px;
         line-height: 57px;
         text-transform: uppercase;
-        margin-top: 0;
+        margin-top: 100px;
         margin-bottom: 20px;
     }
     &__text {
@@ -657,7 +660,9 @@ body {
         margin-top: 0;
         margin-bottom: 60px;
     }
-    &__form {}
+    &__form {
+        margin-bottom: 150px;
+    }
     &__input {
         width: 284px;
         height: 52px;
@@ -697,8 +702,7 @@ body {
     }
     &__inner {
         margin: 0 auto;
-        max-width: 1135px;
-        height: 468px;
+        max-width: 1135px;        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -727,7 +731,10 @@ body {
         color:#fff;
         display: block;       
     }
-
+    &__map {
+        margin-top: 110px;
+        margin-bottom: 110px;
+    }
     &__contact {
         width: 311px;
         height: 195px;
@@ -783,7 +790,19 @@ body {
             
         }
     }
-
+    .simple {
+        &__bottom {            
+            gap: 10px;            
+        }
+        &__item {
+            padding: 20px;   
+        }
+    }
+    .footer {
+        &__inner{
+        gap: 50px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -896,6 +915,29 @@ body {
             margin-bottom: 0;            
         }
     }
+    .simple {        
+        &__bottom {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            align-items: center; 
+            margin-bottom: 20px;           
+        }
+        &__h2 {
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__inner{
+        flex-flow: column;
+        }
+        &__map {
+            margin: 20px 0;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -911,6 +953,30 @@ body {
     .quick {
         &__inner {
             margin-bottom: 50px;
+        }
+    }
+    .subscribe {
+        &__h2 {
+            margin-top: 50px;
+            text-align: center;
+        }
+        &__text {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__form {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        &__input {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__submit {
+            width: 100%;
         }
     }
 
@@ -1059,6 +1125,12 @@ body {
             margin-top: 10px; 
         }      
     }
+    .simple {     
+        &__text {
+            max-width: 80%;
+        }
+
+    }
 }
 
 @media (max-width: 480px) {
@@ -1131,7 +1203,7 @@ body {
         &__inner {              
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 50% 30% 20%;
+            grid-template-rows: 40% 40% 20%;
         }
         &__left-top {  
             grid-column: 1 / 2;
@@ -1141,6 +1213,8 @@ body {
         &__right {
             grid-column: 1 / 2;
             grid-row: 2 / 3 ;
+            // margin-top: 0;
+            // margin-bottom: 0;
         }
         &__left-bottom{
             grid-column: 1 / 2;
@@ -1162,6 +1236,15 @@ body {
             margin-bottom: 0;
             margin-top: 10px;
         }
+    }
+    .footer {
+        &__inner {
+            flex-flow: column;        
+            gap: 0;
+        }      
+        &__map {
+            width: 300px;
+        }  
     }
 }
 
